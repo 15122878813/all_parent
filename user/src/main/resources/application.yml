@@ -1,0 +1,42 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///ygnbdsjk?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    type : com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      max-wait-millis: 5000
+  thymeleaf:
+    prefix: classpath:/templates/pages/
+    suffix: .html
+  #mybatis
+  aop:
+    proxy-target-class: true
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  redis:
+    port: 6379
+    host: 47.92.0.146
+  application:
+    name: user
+mybatis:
+  configuration:
+    default-statement-timeout: 30
+    map-underscore-to-camel-case: true
+  mapper-locations:
+    - classpath:/mapper/sys/*Mapper.xml
+  #Log
+logging:
+  level:
+    com.cy: debug
+server:
+  port: 8006
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:2001/eureka,http:127.0.0.1:2002/eureka,http:127.0.0.1:2003/eureka

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="toec-feign" />
+        <module name="toec-order" />
+        <module name="toec-vip" />
+        <module name="toec-turbine" />
+        <module name="toec-orderseat" />
+        <module name="toec-html" />
+        <module name="toec-collection" />
+        <module name="toec-hystrix" />
+        <module name="common" />
+        <module name="toec-hystrix-dashboard" />
+        <module name="eureka" />
+        <module name="toec-ribbon" />
+        <module name="toec-user" />
+        <module name="toec-register" />
+        <module name="toec-zuul" />
+        <module name="toec-dish" />
+      </profile>
+      <profile name="Annotation profile for Maven" enabled="true">
+        <sourceOutputDir name="../common/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../common/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="toec-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ribbon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
+      <module name="toec-collection" options="-parameters" />
+      <module name="toec-dish" options="-parameters" />
+      <module name="toec-feign" options="-parameters" />
+      <module name="toec-html" options="-parameters" />
+      <module name="toec-hystrix" options="-parameters" />
+      <module name="toec-hystrix-dashboard" options="-parameters" />
+      <module name="toec-order" options="-parameters" />
+      <module name="toec-orderseat" options="-parameters" />
+      <module name="toec-register" options="-parameters" />
+      <module name="toec-ribbon" options="-parameters" />
+      <module name="toec-turbine" options="-parameters" />
+      <module name="toec-user" options="-parameters" />
+      <module name="toec-vip" options="-parameters" />
+      <module name="toec-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

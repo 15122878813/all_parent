@@ -1,0 +1,22 @@
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/pages/
+    suffix: .html
+  application:
+    name: html
+logging:
+  level:
+    com.toec: debug
+
+server:
+  port: 80
+  servlet:
+    context-path: /
+  tomcat:
+    max-threads: 1000
+    uri-encoding: UTF-8
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:2001/eureka,http:127.0.0.1:2002/eureka,http:127.0.0.1:2003/eureka

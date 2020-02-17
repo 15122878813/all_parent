@@ -1,0 +1,43 @@
+#命令行中进行启动
+#java -jar eureka1.jar --spring.profiles.active=eureka1
+#或者是
+#java -jar eureka2.jar --spring.profiles.active=eureka2
+spring:
+  application:
+    name: eureka-server
+eureka:
+  server:
+    enable-self-preservation: false  #自我保护（对地址表）
+---  #第一个启动参数
+spring:
+  profiles: eureka1
+server:
+  port: 2001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:2002/eureka,http://127.0.0.1:2003/eureka
+  instance:
+    hostname: eureka1
+---  #第二个启动参数
+spring:
+  profiles: eureka2
+server:
+  port: 2002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:2001/eureka,http://127.0.0.1:2003/eureka
+  instance:
+    hostname: eureka2
+--- #第三个启动参数
+spring:
+  profiles: eureka3
+eureka:
+  instance:
+    hostname: eureka3
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:2001/eureka,http://127.0.0.1:2002/eureka
+server:
+  port: 2003

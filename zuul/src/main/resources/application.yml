@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 3003
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:2001/eureka,http:127.0.0.1:2002/eureka,http:127.0.0.1:2003/eureka
+#zuul:
+#  routes:
+#    vip: "/item-service/**"
+zuul:
+  retryable: true
+#默认重试主机数量为1 重试单台次数为0
