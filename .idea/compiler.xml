@@ -6,22 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="toec-feign" />
-        <module name="toec-order" />
-        <module name="toec-vip" />
-        <module name="toec-turbine" />
         <module name="toec-orderseat" />
-        <module name="toec-html" />
-        <module name="toec-collection" />
-        <module name="toec-hystrix" />
-        <module name="common" />
-        <module name="toec-hystrix-dashboard" />
-        <module name="eureka" />
-        <module name="toec-ribbon" />
-        <module name="toec-user" />
-        <module name="toec-register" />
-        <module name="toec-zuul" />
         <module name="toec-dish" />
+        <module name="toec-order" />
+        <module name="toec-register" />
+        <module name="zuul" />
+        <module name="hystrix" />
+        <module name="toec-feign" />
+        <module name="toec-turbine" />
+        <module name="collection" />
+        <module name="toec-html" />
+        <module name="orderseat" />
+        <module name="toec-hystrix" />
+        <module name="eureka1" />
+        <module name="user" />
+        <module name="order" />
+        <module name="feign" />
+        <module name="toec-user" />
+        <module name="common" />
+        <module name="ribbon" />
+        <module name="toec-vip" />
+        <module name="eureka" />
+        <module name="register" />
+        <module name="toec-ribbon" />
+        <module name="dish" />
+        <module name="toec-zuul" />
+        <module name="toec-hystrix-dashboard" />
+        <module name="hystrix-dashboard" />
+        <module name="vip" />
+        <module name="toec-collection" />
+        <module name="turbine" />
       </profile>
       <profile name="Annotation profile for Maven" enabled="true">
         <sourceOutputDir name="../common/target/generated-sources/annotations" />
@@ -30,13 +44,19 @@
         <module name="toec-common" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ribbon" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="collection" options="-parameters" />
+      <module name="dish" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="eureka1" options="-parameters" />
+      <module name="feign" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="orderseat" options="-parameters" />
+      <module name="register" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="toec-collection" options="-parameters" />
       <module name="toec-dish" options="-parameters" />
@@ -52,6 +72,10 @@
       <module name="toec-user" options="-parameters" />
       <module name="toec-vip" options="-parameters" />
       <module name="toec-zuul" options="-parameters" />
+      <module name="turbine" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="vip" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>
