@@ -15,6 +15,7 @@ public class MyFilter extends ZuulFilter {
     @Override
     public String filterType() {
         return FilterConstants.PRE_TYPE;
+//        return FilterConstants.ROUTE_TYPE; //在服务链中进行请求
     }
 
     @Override
