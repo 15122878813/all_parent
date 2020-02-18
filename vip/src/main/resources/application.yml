@@ -20,7 +20,7 @@ spring:
       enabled: true
   redis:
     port: 6379
-    host: 47.92.0.146
+    host: 192.168.157.128
   application:
     name: vip
 mybatis:
