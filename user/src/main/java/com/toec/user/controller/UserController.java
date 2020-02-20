@@ -25,7 +25,7 @@ public class UserController {
 	登录界面的登录
 	 */
 	 @RequestMapping("/doLogin")
-	 @ResponseBody
+	 @ResponseBody//
 	   public JsonResult doLogin(String username,
 			   String password,boolean isRememberMe,
 								 HttpServletResponse response){

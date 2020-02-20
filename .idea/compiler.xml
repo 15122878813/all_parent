@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="toec-orderseat" />
         <module name="toec-dish" />
-        <module name="toec-zuul" />
+        <module name="toec-register" />
         <module name="zuul" />
         <module name="toec-order" />
         <module name="toec-feign" />
@@ -17,6 +17,7 @@
         <module name="toec-html" />
         <module name="orderseat" />
         <module name="toec-hystrix" />
+        <module name="toec-zuul" />
         <module name="eureka1" />
         <module name="user" />
         <module name="order" />
@@ -32,7 +33,6 @@
         <module name="register" />
         <module name="toec-hystrix-dashboard" />
         <module name="hystrix-dashboard" />
-        <module name="toec-register" />
         <module name="vip" />
         <module name="toec-collection" />
         <module name="turbine" />
